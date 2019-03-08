@@ -1,3 +1,7 @@
-baseURL: http://example.org/
-languageCode: en-us
-title: My New Hugo Site
+baseURL: https://www.buschlab.org/
+languageCode: en-gb
+title: Busch Lab
+disableKinds: [taxonomy, taxonomyTerm, RSS, sitemap, robotsTXT]
+disableHugoGeneratorInject: true
+metaDataFormat: yaml
+theme: buschlab
