@@ -5,3 +5,4 @@ disableKinds: [taxonomy, taxonomyTerm, RSS, sitemap, robotsTXT]
 disableHugoGeneratorInject: true
 metaDataFormat: yaml
 theme: buschlab
+sectionPagesMenu: main
