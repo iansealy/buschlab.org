@@ -93,7 +93,7 @@ body {
 }
 
 #container > header {
-    background-color: #4c959c;
+    background-color: #4c959c; /* Lighter than all coloured circles in SVG */
     width: 320px;
     border-right: 2px solid #0D3539; /* Same as dark circle in SVG */
     font-family: 'Ubuntu Condensed', Roboto, sans-serif;
