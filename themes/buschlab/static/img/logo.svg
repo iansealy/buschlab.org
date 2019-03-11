@@ -21,11 +21,11 @@
   <line x1="325" y1="275" x2="690" y2="345" stroke-width="42" />
 
   <!-- Top left medium circle -->
-  <circle cx="83" cy="65" r="50" fill="#2B398E" stroke-width="20" />
+  <circle cx="83" cy="65" r="50" fill="#184d52" stroke-width="20" />
   <!-- Bottom left light circle -->
-  <circle cx="83" cy="505" r="70" fill="#636EB3" stroke-width="20" />
+  <circle cx="83" cy="505" r="70" fill="#377d83" stroke-width="20" />
   <!-- Right dark circle -->
-  <circle cx="690" cy="345" r="90" fill="#1A266F" stroke-width="30" />
+  <circle cx="690" cy="345" r="90" fill="#0d3539" stroke-width="30" />
   <!-- Big central circle -->
   <circle cx="325" cy="275" r="180" fill="#fff" stroke-width="40" />
 
