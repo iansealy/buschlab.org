@@ -19,10 +19,16 @@
   <line x1="83" y1="65" x2="325" y2="275" stroke-width="18" />
   <line x1="83" y1="505" x2="325" y2="275" stroke-width="35" />
   <line x1="325" y1="275" x2="690" y2="345" stroke-width="42" />
+
+  <!-- Top left medium circle -->
   <circle cx="83" cy="65" r="50" fill="#2B398E" stroke-width="20" />
+  <!-- Bottom left light circle -->
   <circle cx="83" cy="505" r="70" fill="#636EB3" stroke-width="20" />
+  <!-- Right dark circle -->
   <circle cx="690" cy="345" r="90" fill="#1A266F" stroke-width="30" />
+  <!-- Big central circle -->
   <circle cx="325" cy="275" r="180" fill="#fff" stroke-width="40" />
+
   <text x="325" y="265" font-size="90" text-anchor="middle">Busch</text>
   <text x="325" y="365" font-size="90" text-anchor="middle">Lab</text>
 </svg>

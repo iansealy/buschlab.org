@@ -95,7 +95,7 @@ body {
 #container > header {
     background-color: #939CD2;
     width: 320px;
-    border-right: 2px solid #1A266F;
+    border-right: 2px solid #1A266F; /* Same as dark circle in SVG */
     font-family: 'Ubuntu Condensed', Roboto, sans-serif;
 }
 
@@ -142,7 +142,7 @@ body {
 
 body > footer {
     width: 100%;
-    background-color: #1A266F;
+    background-color: #1A266F; /* Same as dark circle in SVG */
     color: #fff;
     padding: 20px 60px;
     font-family: 'Ubuntu Condensed', Roboto, sans-serif;
