@@ -1,11 +1,54 @@
-<!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+<!doctype html>
+<html class="no-js" lang="{{ $.Site.LanguageCode | default "en" }}">
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ block "title" . }}{{ end }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700%7CUbuntu+Condensed" rel="stylesheet">
+</head>
+
+<body>
+
+  <div id="container">
+    <header>
+      {{ if not .IsHome }}<a href="/">{{ end }}<img src="/img/logo.svg" alt="Busch Lab" />{{ if not .IsHome }}</a>{{ end }}
+      <nav>
+        <ul>
+          <li{{ if .IsHome }} class="active"{{ end }}>
+            {{ if not .IsHome }}<a href="/">{{ end }}Home{{ if not .IsHome }}</a>{{ end }}
+          </li>
+          {{ $currentPage := . }}
+          {{ range .Site.Menus.main }}
+          {{ if not $currentPage.Parent }}
+          <li>
+            <a href="{{.URL}}">{{ .Name }}</a>
+          </li>
+          {{ else }}
+          <li{{ if $currentPage.HasMenuCurrent "main" . }} class="active"{{ end }}>
+            {{ if or (not ($currentPage.HasMenuCurrent "main" .)) (not ($currentPage.Parent.IsHome)) }}<a href="{{.URL}}">{{ end }}{{ .Name }}{{ if or (not ($currentPage.HasMenuCurrent "main" .)) (not ($currentPage.Parent.IsHome)) }}</a>{{ end }}
+          </li>
+          {{ end }}
+          {{ end }}
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>{{ block "heading" . }}{{end}}</h1>
+      {{ block "main" . }}{{ end }}
+    </main>
+  </div>
+
+  <footer>
+    <ul>
+        <li>&copy; Busch Lab {{ dateFormat "2006" now }}</li>
+    </ul>
+  </footer>
+
+{{- partial "analytics.html" . -}}
+</body>
+
 </html>
