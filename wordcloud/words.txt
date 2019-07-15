@@ -1,0 +1,39 @@
+zebrafish
+gene regulatory networks
+genetic screen
+mutants
+developmental baseline
+RNA-seq
+in vivo
+heterochromatin
+Baseline CompaRe
+cancer
+CRISPR/Cas9
+Danio rerio
+DeTCT
+development
+differentiation
+embryo
+exome
+forward genetics
+gene expression
+genetic compensation
+genome
+GRCz10
+GRCz11
+high throughput sequencing
+Kdm2aa
+knockouts
+melanoma
+neural crest
+NGS
+RefGenEdit
+regeneration
+repeats
+reverse genetics
+skeletal muscle
+SNVs
+transcriptome
+Zebrafish Mutation Project
+ZMP
+Zv9
