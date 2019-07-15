@@ -1,0 +1,19 @@
+<svg version="1.1"
+     baseProfile="full"
+     width="590" height="590"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      text {
+        font-family: Courier, monospace;
+        font-weight: bold;
+      }
+      circle, line {
+        stroke: #000000;
+      }
+    ]]></style>
+  </defs>
+
+  <text x="290" y="430" font-size="480" text-anchor="middle">BL</text>
+</svg>

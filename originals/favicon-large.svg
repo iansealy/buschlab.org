@@ -1,0 +1,30 @@
+<svg version="1.1"
+     baseProfile="full"
+     width="590" height="590"
+     xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <style type="text/css"><![CDATA[
+      text {
+        font-family: Courier, monospace;
+        font-weight: bold;
+      }
+      circle, line {
+        stroke: #000000;
+      }
+    ]]></style>
+  </defs>
+
+  <line x1="83" y1="65" x2="83" y2="505" stroke-width="7" />
+  <line x1="83" y1="65" x2="325" y2="275" stroke-width="18" />
+  <line x1="83" y1="505" x2="325" y2="275" stroke-width="35" />
+
+  <!-- Top left medium circle -->
+  <circle cx="83" cy="65" r="50" fill="#184d52" stroke-width="20" />
+  <!-- Bottom left light circle -->
+  <circle cx="83" cy="505" r="70" fill="#377d83" stroke-width="20" />
+  <!-- Big central circle -->
+  <circle cx="325" cy="275" r="180" fill="#fff" stroke-width="40" />
+
+  <text x="325" y="340" font-size="240" text-anchor="middle">BL</text>
+</svg>
