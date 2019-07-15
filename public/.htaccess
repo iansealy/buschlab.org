@@ -1,0 +1,10 @@
+ErrorDocument 404 /404.html
+AddType 'text/html; charset=UTF-8' html
+AddType 'text/css; charset=UTF-8' css
+Header add X-Content-Type-Options 'nosniff'
+Options -Indexes
+ServerSignature Off
+
+RewriteEngine On
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,NE]

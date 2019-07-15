@@ -1,0 +1,454 @@
+/*! HTML5 Boilerplate v7.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 1.0.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+ 
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+ /* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body {
+    font-family: Roboto, sans-serif;
+    color: #000;
+}
+
+#container {
+    display: flex;
+}
+
+#container > header {
+    background-color: #6dbac1; /* Lighter than all coloured circles in SVG */
+    width: 320px;
+    border-right: 2px solid #0D3539; /* Same as dark circle in SVG */
+    font-family: 'Ubuntu Condensed', Roboto, sans-serif;
+}
+
+#container > header img {
+    width: 310px;
+    margin: 5px;
+}
+
+#container > header nav ul {
+    list-style-type: none;
+    font-size: 1.3em;
+    padding: 20px 60px 50px;
+    margin: 0;
+}
+
+#container > header nav ul li {
+    line-height: 1.7em;
+}
+
+#container > header nav ul a {
+    text-decoration: none;
+}
+
+#container > header nav ul a:active,
+#container > header nav ul a:link,
+#container > header nav ul a:visited {
+    color: #000;
+}
+
+#container > header nav ul a:hover {
+    text-decoration: underline;
+}
+
+#container > header nav ul li.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+#container > main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 10px 20px 50px;
+}
+
+body > footer {
+    background-color: #0D3539; /* Same as dark circle in SVG */
+    color: #fff;
+    padding: 20px 20px 20px 60px;
+    font-family: 'Ubuntu Condensed', Roboto, sans-serif;
+}
+
+body > footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+body > footer ul:first-child {
+    float: right;
+    margin-top: -2px;
+}
+
+body > footer ul li {
+    display: inline;
+    padding: 0 20px;
+    border-left: 1px solid #fff;
+}
+
+body > footer ul li:first-child {
+    border-left: none;
+    padding-left: 0;
+}
+
+body > footer ul a:active,
+body > footer ul a:link,
+body > footer ul a:visited {
+    color: #fff;
+}
+
+main h1 {
+    border-bottom: 1px solid #4a4a4a;
+}
+
+main h2 {
+    margin-top: 2em;
+}
+
+main .wordcloud img {
+    width: 100%;
+    max-width: 100%;
+}
+
+main .person {
+    margin-top: 1em;
+    overflow: hidden;
+}
+
+main .person img {
+    float: left;
+    margin-right: 2em;
+    border: 2px solid #0D3539; /* Same as dark circle in SVG */
+}
+
+main .person h2 {
+    clear: left;
+}
+
+main .location,
+main .resource {
+    overflow: hidden;
+    clear: right;
+}
+
+main .location img {
+    float: right;
+    margin: 3.2em 2em 0 2em;
+}
+
+main .resource img {
+    float: right;
+    margin: 0 2em 2em 2em;
+}
+
+main .publication {
+    margin: 1em 0;
+}
+
+main .publication .journal {
+    font-style: italic;
+}
+
+main .publication .current {
+    font-weight: bold;
+}
+
+main div.funders {
+    overflow: hidden;
+}
+
+main div.funders ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+main div.funders ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 2em;
+}
+
+main img.research {
+    float: right;
+    padding: 1em;
+    border: 1px solid #0D3539; /* Same as dark circle in SVG */
+    margin: 0 2em 2em 2em;
+}
+
+@media only screen and (max-width: 800px) {
+    #container {
+        display: block;
+    }
+
+    #container > header {
+        width: auto;
+        border-right: none;
+    }
+
+    #container > header img {
+        width: 160px;
+        float: right;
+    }
+
+    #container > header nav ul {
+        padding: 10px 20px;
+    }
+
+    #container > main {
+        width: auto;
+        max-width: none;
+    }
+
+    body > footer {
+        width: auto;
+        padding: 10px 20px;
+    }
+
+    body > footer ul li {
+        display: block;
+        padding: 0;
+        border-left: none;
+    }
+
+    main .resource img {
+        float: none;
+    }
+}
+
+ /* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+ .hidden {
+  display: none !important;
+}
+
+/*
+* Hide only visually, but have it available for screen readers:
+* https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+*
+* 1. For long content, line feeds are not interpreted as spaces and small width
+*    causes content to wrap 1 word per line:
+*    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+*/
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap; /* 1 */
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element
+* to be focusable when navigated to via the keyboard:
+* https://www.drupal.org/node/897638
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+  white-space: inherit;
+}
+
+/*
+* Hide visually and from screen readers, but maintain layout
+*/
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*
+* For modern browsers
+* 1. The space content is one way to avoid an Opera bug when the
+*    `contenteditable` attribute is included anywhere else in the document.
+*    Otherwise it causes space to appear at the top and bottom of elements
+*    that receive the `clearfix` class.
+* 2. The use of `table` rather than `block` is only necessary if using
+*    `:before` to contain the top-margins of child elements.
+*/
+
+.clearfix:before,
+.clearfix:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+ 
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+   @media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
