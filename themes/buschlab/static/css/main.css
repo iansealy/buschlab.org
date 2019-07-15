@@ -141,10 +141,9 @@ body {
 }
 
 body > footer {
-    width: 100%;
     background-color: #0D3539; /* Same as dark circle in SVG */
     color: #fff;
-    padding: 20px 60px;
+    padding: 20px 20px 20px 60px;
     font-family: 'Ubuntu Condensed', Roboto, sans-serif;
 }
 
@@ -152,6 +151,11 @@ body > footer ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+}
+
+body > footer ul:first-child {
+    float: right;
+    margin-top: -2px;
 }
 
 body > footer ul li {
@@ -173,6 +177,81 @@ body > footer ul a:visited {
 
 main h1 {
     border-bottom: 1px solid #4a4a4a;
+}
+
+main h2 {
+    margin-top: 2em;
+}
+
+main .wordcloud img {
+    width: 100%;
+    max-width: 100%;
+}
+
+main .person {
+    margin-top: 1em;
+    overflow: hidden;
+}
+
+main .person img {
+    float: left;
+    margin-right: 2em;
+    border: 2px solid #0D3539; /* Same as dark circle in SVG */
+}
+
+main .person h2 {
+    clear: left;
+}
+
+main .location,
+main .resource {
+    overflow: hidden;
+    clear: right;
+}
+
+main .location img {
+    float: right;
+    margin: 3.2em 2em 0 2em;
+}
+
+main .resource img {
+    float: right;
+    margin: 0 2em 2em 2em;
+}
+
+main .publication {
+    margin: 1em 0;
+}
+
+main .publication .journal {
+    font-style: italic;
+}
+
+main .publication .current {
+    font-weight: bold;
+}
+
+main div.funders {
+    overflow: hidden;
+}
+
+main div.funders ul {
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+main div.funders ul li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 2em;
+}
+
+main img.research {
+    float: right;
+    padding: 1em;
+    border: 1px solid #0D3539; /* Same as dark circle in SVG */
+    margin: 0 2em 2em 2em;
 }
 
 @media only screen and (max-width: 800px) {
@@ -208,6 +287,10 @@ main h1 {
         display: block;
         padding: 0;
         border-left: none;
+    }
+
+    main .resource img {
+        float: none;
     }
 }
 
