@@ -6,3 +6,8 @@ disableHugoGeneratorInject: true
 metaDataFormat: yaml
 theme: buschlab
 sectionPagesMenu: main
+menu:
+  main:
+  - identifier: zmp
+    name: ZMP
+    url: https://zmp.buschlab.org/
