@@ -212,6 +212,7 @@ main .resource {
 main .location img {
     float: right;
     margin: 0em 2em 0 2em;
+    border: 4px solid #000;
 }
 
 main .resource img {
