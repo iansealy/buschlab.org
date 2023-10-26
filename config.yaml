@@ -1,7 +1,7 @@
 baseURL: https://www.buschlab.org/
 languageCode: en-gb
 title: Busch Lab
-disableKinds: [taxonomy, taxonomyTerm, RSS, sitemap, robotsTXT]
+disableKinds: [taxonomy, RSS, sitemap, robotsTXT]
 disableHugoGeneratorInject: true
 metaDataFormat: yaml
 theme: buschlab
